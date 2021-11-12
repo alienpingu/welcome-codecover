@@ -28,13 +28,13 @@ function LandingPage() {
 							<p>Comodo, Semplice, Veloce!</p>
 						</div>
 					</Col>
-					<Col xs={12} md={6}>
+					<Col xs={12} md={6} className="bg-fucile">
 						<div className="bg-light text-dark p-4 m-4 rounded">
 							<WelcomeForm />
 						</div>
 						
 					</Col>
-					<Col md="12" id="footer" className="text-center h5">
+					<Col md="12" id="footer" className="bg-fucile text-center h5">
 						<p>©  Codecover by Brambiz Srl - patented in Italy 202021000005147</p>
 					</Col>
 				</Row>

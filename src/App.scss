@@ -29,6 +29,7 @@ html, body, .App {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     h1 {
       font-size: 4rem;
       font-weight: 700;
@@ -42,7 +43,9 @@ html, body, .App {
   }
 
 }
-
+.bg-fucile {
+  background: #293133;
+}
  
 #logo {
   position:absolute;
@@ -56,12 +59,17 @@ html, body, .App {
 
 #footer {
   z-index: 1;
+  margin-bottom: 0;
+
 }
 
 
 @media only screen and (min-width: 1200px){
   #master-row {
     padding-top: 0;
+  }
+  .bg-fucile {
+    background: none;
   }
   #footer {
     position:fixed;
