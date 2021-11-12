@@ -35,7 +35,7 @@ function LandingPage() {
 						
 					</Col>
 					<Col md="12" id="footer" className="text-center h5">
-						<p>©  Codecover by Brambiz Srl - patented in Italy 202021000005147</p>
+						<p>©  Codecover by Brambiz snc - patented in Italy 202021000005147</p>
 					</Col>
 				</Row>
 			</Container>)
