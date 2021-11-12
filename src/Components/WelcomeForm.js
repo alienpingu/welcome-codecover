@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 
+
+
 import {
     Form,
     Row,
@@ -29,9 +31,15 @@ export default function FormExample() {
       method="POST"
       encType="multipart/form-data"
     >
+      <h2>Effettua subito il tuo ordine via:</h2>
       <Row className="mb-3">
+        <Col xs={12} lg={6}><Button as="a" href="https://api.whatsapp.com/send/?phone=%2B393755756800" variant="outline-success">WhatsApp</Button></Col>
+        <Col xs={12} lg={6}><Button as="a" href="mailto:info@codecover.it" variant="outline-primary">E-mail</Button></Col>
+      </Row>
+      <Row className="mb-3">
+        <h6>Altrimenti compila il form per esser ricontattato via e-mail</h6>
         <Form.Group as={Col} md="6" controlId="validationCustom01">
-          <Form.Label>First name</Form.Label>
+          <Form.Label>Nome</Form.Label>
           <Form.Control
             required
             type="text"
@@ -41,7 +49,7 @@ export default function FormExample() {
           />
         </Form.Group>
         <Form.Group as={Col} md="6" controlId="validationCustom02">
-          <Form.Label>Last name</Form.Label>
+          <Form.Label>Cognome</Form.Label>
           <Form.Control
             required
             type="text"
@@ -78,7 +86,7 @@ export default function FormExample() {
           />
         </Form.Group>
       </Row>
-      <Row className="mb-3">
+{/*      <Row className="mb-3">
        <Form.Group as={Col} md="6" controlId="validationCustom03">
           <Form.Label>Scegli modello</Form.Label>
          <Form.Select aria-label="Default select example" name="modello">
@@ -122,16 +130,16 @@ export default function FormExample() {
             Inserire un codice postale
           </Form.Control.Feedback>
         </Form.Group>
-      </Row>
+      </Row>*/}
       <Form.Group className="mb-3">
         <Form.Check
           required
           label="Accetto i termini e le condizioni"
           feedback="Devi accettare i termini e le condizioni"
-          feedbackType="invalid"
+          feedbacktype="invalid"
         />
       </Form.Group>
-      <Button type="submit" block>Invia</Button>
+      <Button type="submit">Invia</Button>
     </Form>
   );
 }

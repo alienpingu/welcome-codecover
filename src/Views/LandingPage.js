@@ -19,22 +19,22 @@ function LandingPage() {
 
 	return(<Container id="LandingPage" fluid>
 
-				<span id="logo">CODECOVER</span>
+				<span id="logo" className="text-animation1">CODECOVER</span>
 				<Row className="master-row">
-					<Col  xs={12} md={6} className="px-5">							
+					<Col  xs={12} lg={6} className="px-5 slide1">							
 						<div>
-							<h1>Green Pass sempre visibile</h1>
+							<h1 className="text-animation1">Green Pass sempre visibile</h1>
 						<p>Ordina subito la cover del tuo smartphone con sopra inciso il tuo Greenpass, sempre visibile anche con il telefono scarico.</p>
 							<p>Comodo, Semplice, Veloce!</p>
 						</div>
 					</Col>
-					<Col xs={12} md={6} className="bg-fucile">
+					<Col xs={12} lg={6}>
 						<div className="bg-light text-dark p-4 m-4 rounded">
 							<WelcomeForm />
 						</div>
 						
 					</Col>
-					<Col md="12" id="footer" className="bg-fucile text-center h5">
+					<Col md="12" id="footer" className="text-center h5">
 						<p>©  Codecover by Brambiz Srl - patented in Italy 202021000005147</p>
 					</Col>
 				</Row>
