@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 
-
 import {
     Form,
     Row,
@@ -28,7 +27,7 @@ export default function FormExample() {
       onSubmit={handleSubmit} 
       action="https://formspree.io/f/mzbyllng" 
       method="POST"
-      enctype="multipart/form-data"
+      encType="multipart/form-data"
     >
       <Row className="mb-3">
         <Form.Group as={Col} md="6" controlId="validationCustom01">
