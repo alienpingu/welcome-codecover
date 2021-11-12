@@ -9,6 +9,7 @@ import {
 
 // View
 import LandingPage from "./Views/LandingPage";
+import PrivacyPolicy from "./Views/PrivacyPolicy";
 // Style in SASS
 import './App.scss';
 
@@ -21,11 +22,8 @@ function App() {
             <Route exact path="/">
               <LandingPage />
             </Route>
-            <Route path="/about">
-              {'about'}
-            </Route>
-            <Route path="/dashboard">
-              {'dashboard'}
+            <Route path="/policy">
+              <PrivacyPolicy />
             </Route>
           </Switch>
         </div>

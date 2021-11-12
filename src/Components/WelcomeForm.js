@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 
 
-
 import {
     Form,
     Row,
@@ -132,6 +131,7 @@ export default function FormExample() {
         </Form.Group>
       </Row>*/}
       <Form.Group className="mb-3">
+      
         <Form.Check
           required
           label="Accetto i termini e le condizioni"

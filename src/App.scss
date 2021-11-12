@@ -20,7 +20,6 @@ html, body, .App {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   .master-row {
     min-height: 100vh;
     padding-top: 6rem;
@@ -69,6 +68,15 @@ html, body, .App {
 
 }
 
+#PrivacyPolicy {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  .card {
+    margin-top: 7rem;
+  }
+}
 
 @media only screen and (min-width: 1200px){
   #LandingPage {
