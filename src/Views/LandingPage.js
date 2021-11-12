@@ -18,10 +18,9 @@ import WelcomeForm from '../Components/WelcomeForm'
 function LandingPage() {
 
 	return(<Container id="LandingPage" fluid>
-
 				<span id="logo" className="text-animation1">CODECOVER</span>
 				<Row className="master-row">
-					<Col  xs={12} lg={6} className="px-5 slide1">							
+					<Col  xs={12} lg={6} className="px-5 slide1 first-col">							
 						<div>
 							<h1 className="text-animation1">Green Pass sempre visibile</h1>
 						<p>Ordina subito la cover del tuo smartphone con sopra inciso il tuo Greenpass, sempre visibile anche con il telefono scarico.</p>
