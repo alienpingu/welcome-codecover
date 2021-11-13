@@ -5,7 +5,15 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-// Personal Components
+// Cookie 
+import { CookiesProvider } from "react-cookie";
+
+
+// Gtag manager
+import TagManager from 'react-gtm-module'
+
+// Components
+import CookieBanner from './Components/CookieBanner'
 
 // View
 import LandingPage from "./Views/LandingPage";
@@ -14,20 +22,27 @@ import PrivacyPolicy from "./Views/PrivacyPolicy";
 import './App.scss';
 
 function App() {
+  const tagManagerArgs = {
+      gtmId: 'GTM-M4BWLV5'
+  }
+  TagManager.initialize(tagManagerArgs)
   return (
     <div className="App">
-      <Router>
-        <div>
-          <Switch>
-            <Route exact path="/">
-              <LandingPage />
-            </Route>
-            <Route path="/policy">
-              <PrivacyPolicy />
-            </Route>
-          </Switch>
-        </div>
-      </Router>
+      <CookiesProvider>
+        <Router>
+          <div>
+            <Switch>
+              <Route exact path="/">
+                <LandingPage />
+              </Route>
+              <Route path="/policy">
+                <PrivacyPolicy />
+              </Route>
+            </Switch>
+          </div>
+        </Router>
+        <CookieBanner />
+      </CookiesProvider>
     </div>
   );
 }
