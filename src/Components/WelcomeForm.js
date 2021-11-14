@@ -29,6 +29,7 @@ export default function FormExample() {
       action="https://formspree.io/f/mzbyllng" 
       method="POST"
       encType="multipart/form-data"
+      className="shadow"
     >
       <h2>Effettua subito il tuo ordine via:</h2>
       <Row className="mb-3">

@@ -17,8 +17,8 @@ html, body, .App {
 #LandingPage {
   color: white;
   background: url('./assets/img/bg-phone.jpg');
-  background-position: center;
-  background-size: cover;
+  background-position: top;
+  background-size: contain;
   background-repeat: no-repeat;
   .master-row {
     min-height: 100vh;
@@ -80,7 +80,7 @@ html, body, .App {
 
 @media only screen and (min-width: 1200px){
   #LandingPage {
-    background: url('./assets/img/bg.png');
+    background: url('./assets/img/bg.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
