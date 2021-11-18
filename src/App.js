@@ -18,6 +18,7 @@ import CookieBanner from './Components/CookieBanner'
 // View
 import LandingPage from "./Views/LandingPage";
 import PrivacyPolicy from "./Views/PrivacyPolicy";
+import CookiePolicy from "./Views/CookiePolicy";
 // Style in SASS
 import './App.scss';
 
@@ -35,8 +36,11 @@ function App() {
               <Route exact path="/">
                 <LandingPage />
               </Route>
-              <Route path="/policy">
+              <Route path="/privacy">
                 <PrivacyPolicy />
+              </Route>
+              <Route path="/cookie">
+                <CookiePolicy />
               </Route>
             </Switch>
           </div>

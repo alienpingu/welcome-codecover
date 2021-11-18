@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 
+import {Link} from "react-router-dom";
 
 import {
     Form,
@@ -29,7 +30,6 @@ export default function FormExample() {
       action="https://formspree.io/f/mzbyllng" 
       method="POST"
       encType="multipart/form-data"
-      className="shadow"
     >
       <h2>Effettua subito il tuo ordine via:</h2>
       <Row className="mb-3">
@@ -86,59 +86,13 @@ export default function FormExample() {
           />
         </Form.Group>
       </Row>
-{/*      <Row className="mb-3">
-       <Form.Group as={Col} md="6" controlId="validationCustom03">
-          <Form.Label>Scegli modello</Form.Label>
-         <Form.Select aria-label="Default select example" name="modello">
-          <option>Open this select menu</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </Form.Select>
-        </Form.Group>
-        <Form.Group as={Col} md="6" controlId="validationCustom04">
-            <Form.Label>File</Form.Label>
-            <Form.Control
-              type="file"
-              required
-              name="file"
-            />
-            <Form.Control.Feedback type="invalid" >
-              {"Caricare un QR code"}
-            </Form.Control.Feedback>
-          </Form.Group>
-      </Row>
-      <Row className="mb-3">
-        <Form.Group as={Col} md="6" controlId="validationCustom05">
-          <Form.Label>Indirizzo</Form.Label>
-          <Form.Control type="text" placeholder="Via Milano 44" name="indirizzo"required />
-          <Form.Control.Feedback type="invalid">
-            Perfavore inserire un indirizzo
-          </Form.Control.Feedback>
-        </Form.Group>
-        <Form.Group as={Col} md="3" controlId="validationCustom06">
-          <Form.Label>Città</Form.Label>
-          <Form.Control type="text" placeholder="Città" name="città" required />
-          <Form.Control.Feedback type="invalid">
-            Perfavore inserire una città
-          </Form.Control.Feedback>
-        </Form.Group>
-        <Form.Group as={Col} md="3" controlId="validationCustom07">
-          <Form.Label>Codice Postale</Form.Label>
-          <Form.Control type="text" placeholder="20123" name="zip" required />
-          <Form.Control.Feedback type="invalid">
-            Inserire un codice postale
-          </Form.Control.Feedback>
-        </Form.Group>
-      </Row>*/}
-      <Form.Group className="mb-3">
-      
+      <Form.Group className="mb-3 d-flex">
         <Form.Check
           required
-          label="Accetto i termini e le condizioni"
           feedback="Devi accettare i termini e le condizioni"
           feedbacktype="invalid"
         />
+        <Form.Label className="mx-2" >Accetta i <Link to="privacy" as="span" className="text-primary">termini e condizioni</Link></Form.Label>
       </Form.Group>
       <Button type="submit">Invia</Button>
     </Form>

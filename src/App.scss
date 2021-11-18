@@ -68,7 +68,7 @@ html, body, .App {
 
 }
 
-#PrivacyPolicy {
+#PrivacyPolicy, #CookiePolicy {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -102,6 +102,9 @@ html, body, .App {
   #footer {
     position:fixed;
     bottom: 0;
+    p {
+      font-size:1rem;
+    }
   }
 }
 

@@ -32,11 +32,11 @@ function LandingPage() {
 						<div className="bg-light text-dark p-4 m-4 rounded">
 							<WelcomeForm />
 						</div>
-						<Link className="text-light text-center" to="/policy">Privacy policy | Cookie policy</Link>
+						
 					
 					</Col>
-					<Col md="12" id="footer" className="text-center h5">
-						<p>©  Codecover by Brambiz snc - patented in Italy 202021000005147</p>
+					<Col md="12" id="footer" className="text-center">
+						<p>©  Codecover by Brambiz snc - patented in Italy 202021000005147 | <Link className="text-light text-decoration-none" to="/privacy">Privacy policy </Link> | <Link className="text-light text-decoration-none" to="/cookie">Cookie policy</Link></p>
 					</Col>
 				</Row>
 			</Container>)
